@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Private Inbox Reader</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1d1d1f; --muted:#5b5b60; --bg:#fbfbfa; --line:#e2e2df; --accent:#2f5d8a; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#ececea; --muted:#a3a3a0; --bg:#161616; --line:#2e2e2c; --accent:#8db4dc; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:56px 24px 72px; }
+  h1 { font-size:1.9rem; line-height:1.2; margin:0 0 8px; }
+  h2 { font-size:1.15rem; margin:36px 0 8px; }
+  .lede { color:var(--muted); font-size:1.05rem; margin:0 0 28px; }
+  nav { display:flex; gap:20px; padding-bottom:16px; border-bottom:1px solid var(--line); margin-bottom:32px; font-size:.95rem; }
+  a { color:var(--accent); }
+  ul { padding-left:1.2em; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.875rem; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+  <h1>Private Inbox Reader</h1>
+  <p class="lede">A personal, single-owner tool that lets its owner's AI assistant read their own Gmail and Google Calendar, without being able to change anything.</p>
+
+  <h2>What it is</h2>
+  <p>Private Inbox Reader is a Google sign-in client used by one person to connect their own Google accounts to an AI coding and productivity assistant running on their own computer. It is not a public service, and it isn't offered, sold, or advertised to anyone else.</p>
+
+  <h2>What it can do</h2>
+  <ul>
+    <li><strong>Read</strong> Gmail messages (Google permission: <code>gmail.readonly</code>).</li>
+    <li><strong>Read</strong> Google Calendar events (Google permission: <code>calendar.readonly</code>).</li>
+  </ul>
+
+  <h2>What it cannot do</h2>
+  <p>Because it only holds read-only permissions, Google blocks it from sending, forwarding, deleting, moving, or labelling email, and from creating or changing calendar events. It does not access Google Drive, Contacts, or any other Google service.</p>
+
+  <h2>Learn more</h2>
+  <p>See the <a href="privacy.html">Privacy Policy</a> for how data is handled, and the <a href="terms.html">Terms of Service</a> for conditions of use.</p>
+
+  <footer>Private Inbox Reader is an independent personal project. It is not affiliated with or endorsed by Google.</footer>
+</main>
+</body>
+</html>
